@@ -21,7 +21,7 @@ class CreateItemsTable extends Migration
             $table->text('description');
             $table->integer('available')->default('1');
             $table->unsignedBigInteger('category_id');
-            $table->integer('delivery');
+            $table->integer('delivery')->default('0');
             $table->unsignedBigInteger('city_id');
             $table->unsignedBigInteger('user_id');
             $table->text('address');
